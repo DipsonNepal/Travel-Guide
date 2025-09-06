@@ -1,65 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Nepal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">Travel Nepal</div>
-            <ul>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#culture">Culture</a></li>
-                <li><a href="#tips">Travel Tips</a></li>
-                <li><a href="#accommodation">Accommodation</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Recommendation Bar -->
+<div id="recommendation-bar">
+  <h3>You may also like:</h3>
+  <div class="recommendation-items">
+    <div class="recommendation-item">
+      <img src="pokhara-image.jpg" alt="Pokhara">
+      <p>Pokhara Adventure</p>
+    </div>
+    <div class="recommendation-item">
+      <img src="lumbini-image.jpg" alt="Lumbini">
+      <p>Lumbini Tour</p>
+    </div>
+    <div class="recommendation-item">
+      <img src="kathmandu-image.jpg" alt="Kathmandu">
+      <p>Kathmandu Heritage Walk</p>
+    </div>
+  </div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="nepal-hero.jpg" alt="Nepal Himalayas">
-        <div class="cta">
-            <h1>Explore the Wonders of Nepal</h1>
-            <p>Plan your next adventure in the heart of the Himalayas</p>
-            <a href="#contact" class="cta-btn">Start Planning</a>
-        </div>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section id="destinations" class="featured">
-        <h2>Featured Destinations</h2>
-        <div class="destination-cards">
-            <div class="destination-card">
-                <img src="kathmandu.jpg" alt="Kathmandu">
-                <h3>Kathmandu</h3>
-                <p>The cultural heart of Nepal, home to historic temples and vibrant markets.</p>
-            </div>
-            <div class="destination-card">
-                <img src="pokhara.jpg" alt="Pokhara">
-                <h3>Pokhara</h3>
-                <p>A peaceful city with stunning lakes and adventure activities.</p>
-            </div>
-            <div class="destination-card">
-                <img src="everest.jpg" alt="Everest Base Camp">
-                <h3>Everest Base Camp</h3>
-                <p>Trek to the base of the world's highest peak.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Travel Nepal. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
+<style>
+  #recommendation-bar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .recommendation-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recommendation-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .recommendation-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+</style>
